@@ -16,11 +16,12 @@
 - blueberry
 - nm-applet
 - pavucontrol
+- polkit-gnome
 
 ## Installation on Arch Linux using paru
 
 ```sh
-paru -S hyprpaper swaymsg fuzzel xdg-desktop-portal-hyprland xdg-desktop-portal-gtk ttf-jetbrains-mono ttf-font-awesome foot qt5-wayland qt6-wayland swaync hyprland hyprshot blueberry nm-applet pavucontrol
+paru -S hyprpaper swaymsg fuzzel xdg-desktop-portal-hyprland xdg-desktop-portal-gtk ttf-jetbrains-mono ttf-font-awesome foot qt5-wayland qt6-wayland swaync hyprland hyprshot blueberry nm-applet pavucontrol polkit-gnome
 ```
 ## screenshots
 <div style="display: flex; flex-direction: column;">
