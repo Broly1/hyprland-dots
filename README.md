@@ -2,7 +2,7 @@
 **Warning:** This script is tailored for my personal configuration. I cannot be held responsible for any potential system issues or data loss resulting from the use of this script. Proceed with caution and at your own risk.
 
 ## Introduction
-This script automates the setup process for my personal Arch Linux environment. It is designed for a minimal Arch Linux installation with specific configurations, including network manager and Pipewire audio setup. While it is primarily intended for use on a minimal Arch Linux setup without a desktop environment, it may also be compatible with other setups, although this has not been extensively tested.
+This script automates the setup process for my personal Arch Linux environment. It is designed for a minimal Arch Linux installation with specific configurations, including display resolution network manager and Pipewire audio setup. While it is primarily intended for use on a minimal Arch Linux setup without a desktop environment, it may also be compatible with other setups, although this has not been extensively tested.
 
 ## Automatic Installation
 
