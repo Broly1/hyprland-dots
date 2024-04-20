@@ -39,7 +39,8 @@
     "spacing": 10
   },
   "clock#simpleclock": {
-    "tooltip": false,
+    "tooltip": true,
+    "tooltip-format": "Clock",
     "format": "  {:%H:%M}"
   },
   "clock": {
@@ -70,7 +71,8 @@
   },
   "custom/bluetooth": {
     "format": "",
-    "tooltip": false,
+    "tooltip": true,
+    "tooltip-format": "Bluedberry",
     "on-click": "blueberry"
   },
   "custom/logo": {
@@ -82,8 +84,9 @@
     "tooltip": false
   },
   "custom/power": {
-    "tooltip": false,
-    "on-click": "wlogout -p layer-shell &",
-    "format": " "
+    "format": " ",
+    "tooltip": true,
+    "tooltip-format": "Power-Off",
+    "on-click": "wlogout -p layer-shell &"
   }
 }
