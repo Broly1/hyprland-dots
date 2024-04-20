@@ -15,7 +15,7 @@ To use the script, follow these steps:
 
 2. Download the script:
     ```sh
-    wget https://codeberg.org/Broly/hypr_script/raw/branch/master/my-hype.sh
+    wget https://raw.githubusercontent.com/Broly1/hypr_script/master/my-hype.sh
     ```
 
 3. Make the script executable:
