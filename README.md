@@ -44,7 +44,7 @@ The script will automatically install the following dependencies:
 - thunar-archive-plugin
 - gvfs
 - wireplumber
-- foot
+- ghostty
 - polkit-gnome
 - xdg-desktop-portal-hyprland
 - xdg-desktop-portal-gtk
@@ -61,6 +61,6 @@ The script will automatically install the following dependencies:
 
 ## screenshots
 <div style="display: flex; flex-direction: column;">
-    <img src="screenshots/2024-04-16-124856_hyprshot.png" alt="Image 1" width="75%">
-    <img src="screenshots/2024-04-16-130215_hyprshot.png" alt="Image 2" width="75%">
+    <img src="screenshots/Screenshot_20250110_164335-1.png" alt="Image 1" width="75%">
+    <img src="screenshots/Screenshot_20250110_165431.png" alt="Image 2" width="75%">
 </div>

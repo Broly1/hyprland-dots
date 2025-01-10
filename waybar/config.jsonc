@@ -1,5 +1,5 @@
 {
-  "layer": "top",
+  "layer": "bottom",
   "position": "top",
   "height": 32,
   "spacing": 4,
@@ -8,15 +8,17 @@
   "passthrough": false,
   "fixed-center": true,
   "modules-left": ["hyprland/workspaces", "hyprland/window"],
-  "modules-center": ["custom/spotify"],
+  "modules-center": ["mpris", "custom/spotify"],
   "modules-right": [
-    "tray",
-    "custom/bluetooth",
     "cpu",
     "memory",
     "pulseaudio",
     "clock",
     "clock#simpleclock",
+    "custom/bluetooth",
+    "custom/network",
+    "tray",
+    "custom/notification",
     "custom/power"
   ],
   "custom/spotify": {
@@ -27,12 +29,27 @@
     "on-click-middle": "playerctl -p spotify next",
     "exec": "spotifatius monitor"
   },
-  "wlr/workspaces": {
+  "mpris": {
+    "player": "spotify",
+    "dynamic-order": ["artist", "title"],
+    "format": "{player_icon} {dynamic}",
+    "format-paused": "{status_icon} <i>{dynamic}</i>",
+    "status-icons": {
+      "paused": ""
+    },
+    "player-icons": {
+      "default": ""
+    }
+  },
+  "hyprland/workspaces": {
     "on-click": "activate",
-    "format": "{name}",
+    "format": "{id}",
     "all-outputs": true,
     "disable-scroll": false,
     "active-only": false
+  },
+  "hyprland/window": {
+    "format": "{title}"
   },
   "tray": {
     "show-passive-items": true,
@@ -70,23 +87,42 @@
     "on-click": "pavucontrol"
   },
   "custom/bluetooth": {
-    "format": "",
+    "format": "🔵",
     "tooltip": true,
     "tooltip-format": "Bluedberry",
     "on-click": "blueberry"
-  },
-  "custom/logo": {
-    "format": "",
-    "tooltip": false
   },
   "custom/sep": {
     "format": "|",
     "tooltip": false
   },
   "custom/power": {
-    "format": " ",
+    "format": "",
     "tooltip": true,
     "tooltip-format": "Power-Off",
     "on-click": "wlogout -p layer-shell &"
+  },
+  "custom/network": {
+    "format": "",
+    "tooltip": true,
+    "tooltip-format": "Network Settings",
+    "on-click": "ghostty -e nmtui"
+  },
+  "custom/notification": {
+    "tooltip": true,
+    "format": "{icon}",
+    "tooltip-format": "Notifications",
+    "format-icons": {
+    "notification": "<span foreground='red'><small><sup>⬤</sup></small></span>",
+    "none": "",
+    "dnd-notification": "<span foreground='red'><small><sup>⬤</sup></small></span>",
+    "dnd-none": ""
+    },
+    "return-type": "json",
+    "exec-if": "which swaync-client",
+    "exec": "swaync-client -swb",
+    "on-click": "sleep 0.1 && swaync-client -t -sw",
+    "on-click-right": "sleep 0.1 && swaync-client -d -sw",
+    "escape": true
   }
 }
