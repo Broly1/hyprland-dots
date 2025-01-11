@@ -61,6 +61,6 @@ The script will automatically install the following dependencies:
 
 ## screenshots
 <div style="display: flex; flex-direction: column;">
-    <img src="screenshots/Screenshot_20250110_164335-1.png" alt="Image 1" width="75%">
-    <img src="screenshots/Screenshot_20250110_165431.png" alt="Image 2" width="75%">
+    <img src="screenshots/Screenshot_20250111_114533.png" alt="Image 1" width="75%">
+    <img src="screenshots/Screenshot_20250111_114926.png" alt="Image 2" width="75%">
 </div>

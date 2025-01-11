@@ -17,8 +17,8 @@
     "clock#simpleclock",
     "custom/bluetooth",
     "custom/network",
-    "tray",
     "custom/notification",
+    "tray",
     "custom/power"
   ],
   "custom/spotify": {
@@ -87,7 +87,7 @@
     "on-click": "pavucontrol"
   },
   "custom/bluetooth": {
-    "format": "🔵",
+    "format": "",
     "tooltip": true,
     "tooltip-format": "Bluedberry",
     "on-click": "blueberry"

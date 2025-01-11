@@ -40,7 +40,7 @@ window#waybar.hidden {
 }
 
 #workspaces button.active {
-  color: #50fa7b;
+  color: #bd93f9;
   background-color: #21232e;
 }
 
@@ -51,7 +51,6 @@ window#waybar.hidden {
 #clock,
 #pulseaudio,
 #custom-logo,
-#custom-power,
 #custom-network,
 #custom-spotify,
 #custom-notification,
@@ -65,19 +64,20 @@ window#waybar.hidden {
   margin: 2px;
   border-radius: 8px;
   background-color: #21232e;
+  color: #89b4fa;
 }
 
 #mpris.playing {
-  color: #50fa7b;
+  color: #1ed760
 }
 
 #mpris.paused {
-  color: #bd93f9;
+  color: #89b4fa;
 }
 
 #custom-sep {
   padding: 0px;
-  color: #6272a4;
+  color: #89b4fa;
 }
 
 window#waybar.empty #window {
@@ -89,11 +89,11 @@ window#waybar.empty #window {
 }
 
 #memory {
-  color: #ff79c6;
+  color: #50fa7b;
 }
 
 #clock {
-  color: #f1fa8c;
+  color: #ff5555;
 }
 
 #clock.simpleclock {
@@ -101,7 +101,7 @@ window#waybar.empty #window {
 }
 
 #window {
-  color: #50fa7b;
+  color: #bd93f9;
 }
 
 #pulseaudio {
@@ -109,16 +109,16 @@ window#waybar.empty #window {
 }
 
 #pulseaudio.muted {
-  color: #a6adc8;
+  color: #89b4fa;
 }
 
 #custom-logo {
-  color: #bd93f9;
+  color: #89b4fa;
 }
 
 #custom-bluetooth {
   background-color: #21232e;
-  color: #8be9fd;
+  color: #89b4fa;
   padding: 2px 6px;
   font-size: 16px;
   font-weight: bold;
@@ -128,7 +128,7 @@ window#waybar.empty #window {
 
 #custom-notification {
   background-color: #21232e;
-  color: #ff881f;
+  color: #89b4fa;
   padding: 2px 6px;
   font-size: 16px;
   margin: 2px;
@@ -136,7 +136,7 @@ window#waybar.empty #window {
 }
 
 #custom-network {
-  color: #50fa7b;
+  color: #89b4fa;
   padding-right: 5px;
   font-size: 16px;
   margin: 2px;
